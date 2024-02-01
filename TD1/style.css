@@ -1,0 +1,25 @@
+#data-value , #temperature-history{
+    width: fit-content;
+}
+
+#data-value , li{
+    padding: 5px;
+}
+
+.blue-border {
+    border: 2px solid blue;
+}
+
+.green-border {
+    border: 2px solid green;
+}
+
+
+.orange-border {
+    border: 2px solid orange;
+}
+
+.red-border {
+    border: 2px solid red;
+}
+
