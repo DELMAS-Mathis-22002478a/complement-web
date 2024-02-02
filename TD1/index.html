@@ -12,14 +12,19 @@
     <h1>Historique des Températures</h1>
 </header>
 
-<section id="data-container">
-    <article>
+<section id="data-container" aria-live="polite">
+    <div class="tabs">
+        <div class="tab" onclick="showTab('current-tab')" id="current-tab">Donnée actuelle</div>
+        <div class="tab" onclick="showTab('history-tab')" id="history-tab">Historique</div>
+    </div>
+
+    <article id="current-tab-content">
         <h2>Donnée actuelle :</h2>
-        <p id="message-container"></p>
-        <p id="data-value" class="temperature"></p>
+        <p id="message-container" aria-live="assertive"></p>
+        <p id="data-value" class="temperature" aria-atomic="true"></p>
     </article>
 
-    <article>
+    <article id="history-tab-content" style="display: none;">
         <h2>Historique des Températures</h2>
         <ol id="temperature-history"></ol>
     </article>
